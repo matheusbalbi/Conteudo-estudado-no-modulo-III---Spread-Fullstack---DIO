@@ -1,0 +1,2222 @@
+MÓDULO DE JAVASCRIPT
+
+=====================================================
+=====================================================
+
+
+INTRODUÇÃO A JAVASCRIPT
+
+=====================================================
+=====================================================
+
+APRESENTAÇÃO DO CURSO
+
+Stephany Nusch
+
+=====================================================
+=====================================================
+
+A 1
+
+=====================================================
+
+HISTÓRIA, EVOLUÇÃO E APLICAÇÕES
+
+=====================================================
+=====================================================
+
+A 2
+
+História:
+
+É uma linguagem interpretada, rodada em tempo real, o código tá sendo disponibilizado instantâneamente sem precisar ser transformado em outra coisa antes de ver o que acontece, ao contrário de por exemplo o c++ que precisa ser compilado.
+
+Framework para javascript compila na mesma hora.
+
+É uma linguagem baseada em protótipos. como se fosse uma base para uma grande base de dados que o javascript possui.
+
+Multiparadigma, pode trabalhar com orietação a objetos, programação funcional e outros.
+
+Comumente utilizado em aplicações web client-side, é utilizado para criar aplicações web.
+
+Segue o padrão ECMAScript, é como se fosse um padrão para várias linguagens, um conjunto de normas que vai dizer quais funcionálidades que estão sendo lançadas naquela linguagem.
+
+Evolução:
+
+Foi criado em 95, e depois de muitas burocracias, em 97 começo a seguir o padrão ecmascript.
+
+try/catch forma de tratar erros.
+Json aliado para consumo de api e outros.
+
+2015 tem o ecmascript 6.
+
+Algumas aplicações de javascript:
+
+Maior linguagem da web
+desenvolve mobile
+smartwatches
+games
+da para desenvolver rotinas para alexa com o javascrit, o serversivece.
+
+internet of things
+APIs
+
+====================================================
+====================================================
+
+MANIPULANDO UM ARQUIVO
+
+====================================================
+
+A 3
+
+Comentários são simples, pode fazer um de linha ou de várias linhas.
+
+exemplo:
+
+// var y = 0;
+
+comentário de várias linhas:
+
+/*xxxxxxx
+xxxxxx;*/
+
+atalho
+ctrl+/ abre comentário, e se selecionar ele cria de várias linhas.
+
+
+O que é uma variável?
+ex.:
+ax +b = 0 onde "x" é a variável.
+
+var preco = 2;
+
+var desconto = 0.2;
+
+const PRECO =2  //são declaradas em maiusculo para diferenciar.
+
+preco = preco - desconto
+
+
+====================================================
+====================================================
+
+FUNÇÕES
+
+====================================================
+
+O que são funções?
+
+function soma(declare atributos aqui exemplo: a, b) { retorn a+b;
+console.log(a+b); // mostra no console
+}
+
+soma(); //chame sempre a função.
+
+
+===================================================
+===================================================
+
+EXECUTANDO UM ARQUIVO JS
+
+====================================================
+
+CONSOLE:
+
+Aprender a utilizar o console em uma pag no terminal e na web.
+
+na página da web: 
+crtl+shift+i ou inspecionar, uma das abas é o do console, ele mostra alguns erros e avisos.
+
+consigo escrever coisas, declarar variável, fazer operações, declarar funções, constantes e variáveis.
+posso utilizar os elementos da página em atividade.
+
+
+Outra forma é utilizando o node.js, ferramenta que ajuda a rodar o js no lado do servidor.
+
+
+
+Quando queremos falar com o console, utilizamos:
+
+console.log();
+
+
+
+console.log("hello world!");
+
+function returnEvenValues(array) {
+	let evenNums = [];
+for (let i = 0; i < array.length; i++) {
+	if(array[i] % 2 == 0) {
+		evenNums.push(array[i]);
+	} else {
+        console.log(`${array[i]} não é par!`);
+    }
+}
+console.log('os números pares são:', evenNums);
+}
+
+let array = [1, 2, 4, 5, 7, 8];
+
+returnEvenValues(array);
+
+
+
+====================================================
+====================================================
+
+ESTRUTURA DE PROJETO
+
+===================================================
+
+Estrutura de projeto base:
+
+crio um arquivo index.html
+
+arquitetura, normalmente separa por pastas.
+criar pasta assets, são arquivos que não são html
+
+
+====================================================
+====================================================
+
+Inserindo js e css no html
+
+====================================================
+
+importar arquivo js:
+
+<script src="assets/script.js"></script>
+
+importar arquivo css:
+ <link rel="stylesheet" href="assets/styles.css"/>
+
+====================================================
+====================================================
+
+Explorar elementos no DOM
+
+====================================================
+
+DOM:
+Document Object Model (são todos os elementos da página.)
+
+
+====================================================
+====================================================
+
+CRIANDO UM CONTADOR
+
+====================================================
+
+PRÁTICA
+
+Eventos são propriedades de js que vamos usar bastante
+
+
+https://github.com/stebsnusch/basecamp-javascript/tree/main/introducao-ao-javascript/contador
+
+
+====================================================
+====================================================
+
+DESAFIO: TO-DO LIST
+
+====================================================
+
+
+====================================================
+====================================================
+
+ENTENDA O MERCADO DE TRABALHO
+
+====================================================
+
+Frameworks
+
+VueJs
+Angular
+React (biblioteca)
+Jquery
+
+saber o vanila js puro.
+
+São ferramentas desenvolvidas para ter mas facilidade e rapidez para desenvolver o js.
+
+====================================================
+====================================================
+
+Sintaxe e Operadores
+
+====================================================
+
+
+OPERADORES MAIS POPULARES NO JS
+
+São sinais que utilizamos para manipular certa condição.
+
+Atribuição:
+Atribui valores a uma variável:
+= é igual dizer q x é igual a y
++= | x+=y | x=x+y (adiona valor a outra variável.)
+*= | x*=y | x=x*y	'"		"		"
+/= | x/=y | x=x/y	"		"		"
+%= | x%=y | x=x%y  (modulo igual vai retornar o resto da divisão entre os números que participam da operação.)
+
+Operadores de aritmética:
+
++
+-
+*
+** (operação exponencial)
+/ 
+% (módulo)
+++ (incrementa um valor)
+-- (remove um)
+
+
+Operadores de comparação:
+
+== (igual a)
+===(mesmo valor e mesmo tipo)
+!=(diferente)
+!==(valor e tipos diferentes)
+>(maior que)
+<(menor que)
+>=(maior ou igual)
+<= (menor ou igual)
+
+
+Operadores de Lógica:
+
+&& ("e" lógico, duas afirmações verdadeiras)
+|| ("ou" lógico)
+! ("não"lógico)
+
+
+OPERADOR CONDICIONAL:
+
+Ternário
+(condition) ? expression1: expression2
+
+if
+ (condition)
+	statement;
+else
+	statement;
+
+
+====================================================
+====================================================
+
+VARIÁVEIS E TIPOS
+
+====================================================
+
+Atribuição de Valores
+
+O que são variáveis
+O que são constantes
+Diferença entre var, const e let
+
+Case Type:
+
+Original variable as string
+some awesome var
+
+camel case
+someAwesomeVar (muito utilizado na declaração de func e var.)
+
+Snake Case
+some_awesome_var
+
+Kebab Case
+some-awesome-var
+
+Pascal Case
+SomeAwesomevar
+
+Upper Snake Case
+SOME_AWESOME_VAR 
+
+
+VAR E LET:
+
+Var é uma palavra reservada para definir uma variável.
+
+Let traz um escopo de bloco. Funciona some dentro do bloco.
+
+Ex.:
+
+var a = 1;
+var b = 2;
+
+if (a === 1) {
+	var a = 11; // the scope is global
+	let b = 22; // the scope is inside the if-block
+
+	console.log(a); // 11
+	console.log(b); // 22
+}
+
+console.log(a); // 11
+console.log(b); // 2
+
+\\
+
+
+
+Hoisting:
+É atribuir um valor a uma variável antes de declara-la. Só acontece com a var.
+
+Redeclaração: Só acontece com o var.
+
+Reatribuição: Mudar o nome da var, sem a palavra reservada.
+
+camelCase: todas as variáveis utilizam essa prática.
+
+Sempre que tiver o Let, declarar na ordem mais acima.
+
+
+====================================================
+====================================================
+
+	constantes
+
+====================================================
+
+Declaradas em SNAKE_UPPER_CASE
+Escopo de bloco
+Não faz hoisting
+
+Uma constante não pode ser reatribuida, e não pode ser redeclarada.
+
+
+====================================================
+====================================================
+
+LET, VAR E CONST
+
+====================================================
+
+
+	  |	  var		| const | let
+
+Escopo | global ou local | bloco | bloco
+redeclarar | sim | não | não
+reatribuir | sim | não | sim
+hoisting | sim | não | não
+
+
+
+====================================================
+====================================================
+
+ESTRUTURAS DE DADOS
+
+====================================================
+
+
+JavaScript é uma linguagem de tipagem dinâmica.
+
+Conforme o programa vai rodando, eu posso mudar a variável digitando
+typeof.
+
+
+Tipos de dados são distribuidos em dois grandes grupos:
+
+Primitivos, e não primitivos/compostos/complexos.
+
+Primitivos: Números, strings, valores, booleanos, verdadeiro ou falso, null e undefined. Não tem métodos dentro deles e são escritos com letras mínusculas.
+
+Não primitivos: objetos e arrays.
+
+
+=======================================================
+=======================================================
+
+STRINGS
+
+=======================================================
+
+São textos ou frases.
+
+Valores são declarados entre aspas ou crases.
+Hoje existe as interpolações, onde coloco variáveis dentro das strings
+colocando o sifão ${nomevariável}; posso fazer muitas coisas, inclusive colocar html dentro.
+
+ex.:
+
+let nome = "joão"
+
+nome
+"joão"
+
+let sobrenome ="pedro"
+
+typeof
+"string"
+
+nome.concat(sobrenome)
+"joãopedro"
+
+let concatenado = nome.concat(sobrenome)
+typeof concatenado
+"string"
+
+concatenado.length
+9
+
+let exemplo = new String ("blablabla")  //String maius culo=objeto.
+
+typeof exemplo
+"object"
+
+exemplo
+
+
+
+// prototype tem todos os métodos que posso utilizar em uma string.
+
+
+indice sempre começa do 0 e tamanho do 1
+
+para fazer quebra de linha = \n
+
+
+split("") separa tudo de uma string. Com espaço separar só palavras.
+
+
+includes("") posso produrar se a string tem a palavra.
+
+startsWith("")
+
+replace(",""!") retorna uma frase
+
+
+Concatenação
+Propriedade length
+iterabilidade
+formatação
+
+
+=========================================================
+=========================================================
+
+NUMBERES
+
+=========================================================
+
+
+Pode ter números inteiros ou decimais.
+
+
+let num = 100
+
+100+3
+103
+
+100/5
+20
+
+num
+100
+
+num/ 3
+........
+
+
+num*5
+500
+
+num%2
+0 (é par)
+
+num2 % 2
+1 (impar)
+
+
+
+typeof Math.
+ "object"
+
+Math.PI
+3.141...
+
+let fiveByThree
+1.6666666666666666667
+
+Math.floor(fiveByThree)
+1
+Math.ceil(fiveByThree)
+2
+
+
+Em porcentagem se usa string. Faz a operação entre numeros e concatena em uma string.
+
+Declara:
+
+let percent = "10%"
+
+ou
+
+percent + "%"
+10%
+
+typeof percent
+"number"
+
+percent.toString()
+"10"
+
+
+
+
+
+=====================================================================
+=====================================================================
+
+BOOLEAMS
+
+=====================================================================
+
+
+Valores booleams, basicamente é verdadeiro ou falso
+
+true or false
+
+posso validar condicionais
+
+let validation = 3 === 0
+undefined
+validation
+false
+
+validation = 3 === 3
+validation
+true
+
+validation = 3 >4
+false
+
+validation.toString()
+"true"
+
+se colocar "!" ele retorna o valor ao contrário.
+
+!validation
+false
+!true
+!false
+true
+
+
+
+
+
+
+
+=================================================================
+=================================================================
+
+ARRAYS / vetores
+
+=================================================================
+
+São listas interáveis de elementos
+
+
+length mostra o tamanho da lista.
+
+index sempre começa no zero.
+
+
+let array = []
+
+array.push(3)
+1
+
+array
+3
+
+array.push(2)
+2
+
+array
+(2) [3,2]
+
+
+array.pop() //tira o último elemento
+2
+array
+[3]
+
+array.push(2)
+2
+
+array.push(5)  //adiona no final da lista
+3
+array.shift() //tira o primeiro elemento.
+3
+array
+(2) [2,4]
+
+arrary.unshift(1)  //adiciona no começo da lista
+
+
+array
+(3) [1, 2, 5]
+
+for(let i= 0; i <array.length; i++) {
+console.log(array[i])
+}
+1
+2
+5
+undefined
+
+array.includes(3)
+
+array.every(item=> item === 5)
+false
+array.some(item => item === 5)
+true
+
+array.reverse()
+(3) [5, 2, 1]
+0: 5
+1: 2
+2: 1
+lenght: 3
+_proto_: Array(0)
+
+
+
+
+
+=======================================================================
+=======================================================================
+
+
+OBJETOS
+
+=======================================================================
+
+
+Estrutura
+
+let person = {
+keys -----name:'john'------values
+	'---	age: 20 ----------'
+};
+
+
+let objet={}
+
+typeof obj
+"object"
+
+obj.name = "julia"
+"julia"
+
+{name: "julia"}
+	name: "julia"
+_proto: object
+
+obj.age = 20
+20
+
+
+=======================================================================
+
+=======================================================================
+
+
+EMPTY, UNDEFINED E NULL
+
+=======================================================================
+
+São todos valores que retornarão como falso.
+
+Mas são iferentes
+empty, voce declarou como zero, apenas com aspas, somente colchetes ou somente chaves.
+
+null: quando você quer propositalmente que o valor não exista.
+
+undefined: você não declarou, ele não existe.
+
+
+
+======================================================================
+======================================================================
+
+	VERIFICAR PALÍNDROMO
+
+======================================================================
+
+Frase ou palavra que se pode ler, indiferentemente, da esquerda para a direita ou vice-versa."
+
+
+
+======================================================================
+======================================================================
+
+Substituir números pares
+
+======================================================================
+
+
+
+
+
+======================================================================
+======================================================================
+
+
+FUNÇÕES
+
+======================================================================
+
+
+ESTRUTURA E FUNÇÃO ANÔNIMA
+
+
+==================================================================
+==================================================================
+
+Tipos de função:
+
+Estrutura:
+variáveis criadas dentro de uma função apenas podem ser usadas dentro dela.
+
+function nome(parametros {
+ 	//instruções
+	return; //valor de retorno, para a função e retorna o valor, a função roda, vc tem o valor e pode utiliza-la em outras operações.
+}
+
+Função anônima
+funções que representam expressões
+uma variável pode armazenar uma função.
+
+const soma= function (a, b) {
+	return a+ b;
+}
+
+soma(1, 2) //3
+soma(5, 4) //9
+
+
+====================================================
+====================================================
+
+	FUNÇÃO AUTOINVOCÁVEL E CALLBACKS
+
+====================================================
+
+Função autoinvocável
+
+IIFE (immediately invoked function expression)
+uma função anônima entre parênteses, seguida por outro par de parênteses, que representa sua chamada.
+
+(
+	function() {
+		let name = "Digital Inovation One"
+		return name;
+}
+)();
+
+
+//Digital Innovation One
+
+
+=========
+
+(
+	function(a, b) {
+		return a+ b;
+	}
+)(1, 2);
+
+//3
+
+===========
+
+const soma3 = (
+	function() {
+		return a+b;
+}
+)(1, 2);
+
+console.log(soma3) // 3
+
+
+=================
+
+
+Callbacks
+
+Uma função passada como argumento para outra.
+Utilizando callbacks, você tem maior controle da ordem de chamadas.
+
+const calc = function(operacao, num1, num2){
+	return operacao(num1, num2);
+}
+
+const soma = function(num1, num2) {
+	return num1+ num2;
+}
+
+const sub = function(num1, num2) {
+	return num1 - num2;
+}
+
+const resultSoma = calc(soma, 1, 2);
+const resultSub = calc(sub, 1, 2);
+
+console.log(resultSub); // -1
+console.log(resultSoma); // 3
+
+=========
+
+
+
+====================================================
+====================================================
+
+VALORES PADRÃO E OBJETO "ARGUMENTS"
+
+====================================================
+
+Parâmetros
+
+Valroes padrão
+
+ 
+
+function exponencial(array, num= 1) {
+	const result = [];
+
+	for(let i= 0; i <array.length; i++) {
+		result.push(array[i]**num);
+}
+
+return result;
+}
+
+exponencial([1, 2, 3, 4])
+// [1, 2, 3, 4]
+
+exponencial([1, 2, 3, 4], 4)
+// [1, 8, 27,64]
+
+
+
+====
+
+
+OBJETO "ARGUMENSTS"
+
+Um array com todos os parâmetros passados quando a função foi invocada.
+
+
+
+function findMax() {
+	let max = -Infinity;
+
+	for(let i=0; i< arguments.length; i++) {
+		if (arguments[i] > max) {
+		max= arguments[i];
+}
+}
+return max;
+}
+
+
+>findMax (1, 2, 3, 6, 90, 1)
+<- 90
+
+====
+
+
+
+function showArgus(){
+	return arguments;
+}
+
+
+
+
+====================================================
+====================================================
+
+Arrays
+
+Spread: uma forma de lidar separadamente com elementos.
+
+O que era parte de um array se torna um elemento independente.
+
+
+
+function sum(x, y, z) {
+	return x+ y + z;
+}
+
+const numbers = [1, 2, 3];
+
+console.log(sum(...numbers));   //spread = ...
+
+
+
+==============
+
+
+Rest: combina os argumentos em um array   // usa quando está declarando a função.
+
+o que era um elemento independente se torna parte de um array.
+
+
+function 	confereTamanho(...args) {
+	console.log(args.length)
+}
+
+confereTamanho() //0
+confereTamanho(1, 2) //2
+ConfereTamanho(3, 4, 5) //3
+
+
+
+===========
+
+
+OBJETOS
+
+Object Destructuring
+entre chaves{}, podemos filtrar apenas os dados que nos interessam em um objeto.
+
+
+const user = {
+	id: 42,
+	displayName: 'jode',
+	fullName: {
+		firstName: 'john',
+		lastName: 'Doe'
+}
+};
+
+function userId({id}) {
+	return id;
+}
+
+function getFullName({fullName: { firstName: first, lastname: last}}) {
+	return `${first} ${çast}`;
+}
+
+userId(user)
+// 42
+
+getFullName(user)
+//john Doe
+
+
+
+====================================================
+====================================================
+
+IF/ELSE E SWITCH
+
+====================================================
+
+Loops:
+
+if/else
+
+function numeroPositivo(num) {
+	let resultado;
+
+if (num<0) {
+	resultado= false;
+} else {
+	resultado = true;
+}
+
+return resultado;
+}
+
+numeroPositivo(2)
+
+//true
+
+numeroPositivo(-9)
+//false
+
+
+
+
+============
+
+else inf(!ehNegativo && maiorQueDez)
+return "esse Número é positivo e maior que 10!"
+
+===========
+
+SWITCH/CASE
+
+-Equivale a uma comparação de tipo e valor (===)
+-Sempre precisa de um valor "default"
+-Ideal para quando se precisa comparar muitos valores
+
+
+function getAnimal(id){
+	switch(id) {
+		case 1:
+			return "cão";
+		case 2:
+			return "gato";
+		case 3:
+			return "pássaro";
+		default:
+			return "peixe";
+}
+}
+
+getAnimal(1) //cão
+getAnimal(4) //peixe
+getAnimal("1") // peixe
+
+=========
+
+
+
+
+====================================================
+====================================================
+
+	FOR E WHILE
+
+====================================================
+
+FOR
+
+Loop dentro de elementos iteráveis (arrays, strings).
+
+function multiplicaPorDois(arr) {
+	let multiplicados = [];
+
+for(let i = 0; i <arr.length; i++) {
+	multiplicados.push(arr[i] *2);
+}
+return multiplicados;
+}
+const meusNumeros = [2, 33, 456, 356, 40];
+
+multiplicaPorDois(meusNumeros);
+//[4, 66, 912, 712, 80]
+
+
+=========
+
+
+for...in   // pode usar para objetos
+loop entre propriedades enumeráveis de um objeto.
+
+function forInExemplo(obj) {
+for(prop in obj) {
+	console.log(prop);
+}
+}
+
+const meuObjeto = {
+	NOME: "JOÃO",
+	idade: "20",
+	cidade: "Salvador"
+}
+
+forInExemplo(meuObjeto);
+
+//nome
+//idade
+//cidade
+
+==============
+
+para acessar as variáveis:
+
+
+function forInExemplo(obj) {
+for(prop in obj) {
+	console.log(obj[prop]);
+}
+}
+
+const meuObjeto = {
+	NOME: "JOÃO",
+	idade: "20",
+	cidade: "Salvador"
+}
+
+forInExemplo(meuObjeto);
+
+//JOÃO
+//20
+//SALVADOR
+
+
+======================
+
+FOR...OF
+Loop entre estruturas iteráveis (arrays, strings).
+
+function logLetras(palavra) {
+	for (letra of palavra) {
+	console. log(letra);
+}
+}
+
+const palavra = "abacaxi";
+
+logLetras (palavra)
+//a
+//b
+//a
+//c
+//a
+//x
+//i
+
+==============
+
+
+function logNumeros(nums) {
+	for(num of nums) {
+	console.log(num);
+}
+}
+
+const nums = [30, 20, 233, 2];
+
+logLetras(nums)
+//30
+//20
+//233
+//2
+
+==============
+
+
+WHILE (ENQUANTO)
+executa instruções até que a condição se torne falsa.
+
+
+function exemploWhile () {
+	let num = 0
+
+ 	while(num<= 5){
+	console.log(num);
+	num++;
+}
+}
+
+ExemploWhile()
+//0
+//1
+//2
+//3
+//4
+//5
+
+
+================
+
+
+DO...WHILE
+
+
+function exemploDoWhile () {
+	let num = 0
+
+	do {
+	console.log(num);
+	num++;
+} 	while(num<= 5)
+}
+
+ExemploDoWhile()
+
+//0
+//1
+//2
+//3
+//4
+//5
+
+
+==============
+
+
+function exemploDoWhile(){
+	let num = 6;
+
+	do{
+		console.log(num);
+		num++;
+	} while(num <= 5)
+}
+
+exemploDoWhile()
+//6
+
+
+Executa instruções até que a condição se torne falsa.
+Porém a primeira execução sempre ocorre.
+
+
+
+
+====================================================
+====================================================
+
+O QUE É THIS
+
+====================================================
+
+This: o que é?
+
+a palavra reservada this é uma referência de contexto.
+
+
+
+====================================================
+====================================================
+
+MANIPULANDO SEU VALOR
+
+====================================================
+
+
+CALL
+
+é possível passar parâmetros para essa função separando-os por vírgulas.
+
+APPLY
+É possível passar parâmetros para essa função dentro de um array.
+
+
+BIND
+
+Clona a estrutura da função onde é chamada e aplica o valor do objeto passado como parâmetro.
+
+
+====================================================
+====================================================
+
+SINTAXE E OUTRAS RESTRIÇÕES
+
+====================================================
+
+SINTAXE => arrow function
+ 
+const helloWorld = function(){
+	return "Hello World;
+}
+
+===
+
+const helloWorld = () => {
+	return "Hello World;
+}
+
+===
+
+const helloWorld = () => "Hello World";
+
+Caso exista apenas uma linha, pode dispensar as chaves e o return.
+Caso exista apenas um parâmetro, pode dispensar os parênteses.
+
+Arrow Function Não faz hoisting!
+é declarada dentro de uma constante então não faz.
+
+
+Outras restrições:
+
+this: sempre será o objeto global. Métodos para modificar seu valor não irão funcionar;
+
+não existe o objeto "arguments";
+
+o construtur (ex: new MeuObjeto())também pode não pode ser utilizado.
+
+
+
+
+====================================================
+====================================================
+
+
+function alunosAprovados(alunos, media) {
+	let aprovados = [];
+
+	for (let i = 0; i < alunos.length; i++) {
+		let { nota, nome } = alunos[i];
+
+		if (nota >= media) {
+			aprovados.push(nome);
+		}
+	}
+
+	return aprovados;
+}
+
+console.log(alunosAprovados(alunos, 5));
+
+
+
+
+
+====================================================
+====================================================
+
+COLEÇÕES CHAVEADAS
+
+====================================================
+
+
+ESTRUTURA, MÉTODOS E MAP VS OBJETO
+
+====================================================
+
+
+Estrutura do map
+
+basicamente tem as entradas que são basicamente no formato chave e valor, e pode ser interado no looping for of.
+
+uma coleção de arrays no formato [chave, valor];
+pode iterado por um loop..of
+
+
+MÉTODOS
+
+Adicionar, ler e deletar
+
+const myMap = new Map( )
+
+myMap.set('apple, 'fruit');
+//map(1) {"apple" => "fruit"}
+
+
+MyMap.get(apple);
+//"fruit"
+
+
+myMap.delete("apple")
+// true
+
+
+myMap.get("apple")
+//undefined
+
+
+
+Diferença entre map e objeto:
+
+Maps podem ter chaves de qualquer tipo;
+Maps possuem a propriedade length;
+Maps são mais fáceis de iterar;
+Utilizado quando o valor das chaves é desconhecido;
+Os valores tem o mesmo tipo.
+
+
+
+
+====================================================
+====================================================
+
+ESTRUTURA, MÉTODOS E SET VS ARRAY
+
+
+====================================================
+
+SET
+
+Sets são estruturas que armazenam apenas valores únicos, diferentemente do array.
+
+Métodos:
+
+adicionar, consultar e deletar
+
+const mySet = new Set();
+
+mySet.add(1);
+mySet.add(5);
+
+mySet.has(1);
+//true
+
+mySet.has(3);
+//false
+
+meuSet.delete(5);
+
+
+
+==========
+
+
+Diferença entre Sets e arrays:
+
+Possui valores únicos;
+Em vez da propriedade length, consulta-se o número de registros pela propriedade size;
+Não possui os métodos map, filter, reduce e  etc.
+
+
+
+====================================================
+====================================================
+
+
+	MAP, FILTER AND REDUCE
+
+====================================================
+
+
+O que é, sintaxe e map vs forEach
+
+
+Mapping Function
+
+É quando um conjunto A passa por uma operação e se torna o conjunto B.
+
+Cria um novo array.
+Não modifica o array original.
+Realiza as operações em ordem.
+
+
+SINTAXE
+
+array.map(callback, thisArg)
+
+		callback(item, idenx, array)
+
+Callback: Função a ser executada em cada elemento.
+ThisArg (Opcional): valor de 'this' dentro da função de callback.
+
+
+FOR EACH
+
+valor retorno
+considere se o array auxiliar será necessário.
+
+
+====================================================
+====================================================
+
+
+FILTER E SINTAXE
+
+
+====================================================
+
+
+É como se colocasse todo o array dentro de um filtro e apenas os itens que corresponderem a determinada condição vão ser retornados no novo array que será retornado.
+
+Cria um novo Array
+Não modifica o array original.
+
+
+array.filter(callback, thisArg)
+
+Callback: Função a ser executada em cada elemento.
+thisArg(opicional): valor de 'this' dentro da função de callback.
+
+
+const frutras =['maça fuji', 'maça verde', 'laranja', 'abacaxi'];
+
+frutas.filter((fruta) => fruta.includes('maça'))
+
+//retorno: ['maã fugi', 'maça verde'];
+
+
+====================================================
+====================================================
+
+REDUCE E SINTAXE
+
+====================================================
+
+Esse método não retorna outro array, ele executa uma função em todos os elementos do array, e retorna um valor único.
+
+
+Sintaxe:
+
+array.reduce(callbackFn, initialValue)
+
+callback: função a ser executada a partir do acumulador.
+
+initialValue: valor sobre o qual o retorno final irá atuar.
+
+
+
+const callbackFn = function(accumulator, currentValue, index, array) {
+//do something
+}
+array.reduce(callbackFn, initialValue)
+
+
+=======
+
+accumulator/prevValue: acumulador de todas as chamadas de callbackFn
+currentValue: elemento atual sendo acessado pela função.
+
+
+
+====================================================
+====================================================
+
+
+	DEBUGGING E ERROR HANDLING
+
+====================================================
+
+TRATAMENTO DE ERROS
+
+
+====================================================
+
+
+ECMAScript Error e DOMException
+
+=================================================
+TIPOS DE ERROS
+
+
+ECMAScript Error:
+Erros que ocorrem em tempo de execução.
+
+Composto por:
+Mensagem
+Nome
+Linha
+Call Stack
+
+Acontece em tempo de execução, algo não foi declarado, esqueceu algo como um ponto ou virgula e outros...
+
+
+
+DOMException
+
+(document object model)
+
+Erros relacionados ao document object model (DOM).
+
+Está envolvido no contexto quando estamos relacionando o js em uma página da web.
+
+
+====================================================
+====================================================
+
+Throw, Try/Catch e Finally
+
+====================================================
+
+Diferença entre trhow e return
+
+apresentar a implementação da declaração try/catch
+
+
+THROW
+
+Se eu chamo o throw ao invés de return, tem um comportamento de erro.
+
+
+TRY...CATCH
+
+Declaração que dentro do bloco try, você vai verificar um pedaço de código, e se esse pedaço de código tiver algum tipo de erro, ele vai ser capturado na função catch e você pode manipular o erro dentro da catch da forma que quiser.
+
+
+FINALLY
+
+É uma instrução que é chamada independente de ter um erro ou não.
+
+
+===================================================
+===================================================
+
+OBJETO ERROR
+
+====================================================
+
+Como manipular um objeto error.
+
+O erro aceita os parametros message, fileName, lineNumber.
+
+Cria uma constante, da um nome pro erro e envia os parametros.
+
+da um throw na const.
+
+código:
+
+new Error (message, fileName, lineNumber)
+
+//todos os parâmetros são opcionais.
+
+const MeuErro = new Error('Mensagem Inválida');
+throw MeuErro;
+
+
+====
+
+
+erro também pode ter um nome:
+
+MeuErro.name = 'InvalidMessage';
+
+
+
+
+
+====================================================
+====================================================
+
+DEFINIÇÃO, PROMISES E ASYNC/AWAIT
+
+====================================================
+
+
+Assíncono
+
+"Que não ocorre ou não se efetiva ao mesmo tempo."
+
+js roda por padrão de maneira sincrona.
+
+no assincrona, pode fazer uma coisa enquanto faz outra també.
+
+
+
+Promises
+Objeto de processamento assíncrono
+
+Inicialmente, seu valor é desconhecido. Ela pode, então, ser resolvida ou rejeitada.
+
+Um dado que no momento em que se recebe não se tem o valor ainda, mas após um tempo, chega o resultado.
+
+Uma promise pode ter 3 estados:
+1) Pending
+2) Fulfilled
+3) Rejected
+
+
+Async/await
+Funções assíncronas precisam dessas duas palavras chave.
+
+Sempre q quiser o resultado da promises, precisa utlizar o await.
+
+operador específico para lidar com promises.
+
+
+
+
+====================================================
+====================================================
+
+O QUE SÃO APIS E FETCH
+
+====================================================
+
+Consumindo APIs
+
+Application Programming Interface
+
+Uma API é uma forma de intermediar os resultados do back-end com o que é apresentado no front-end.
+
+Você consegue acessá-la por meio de URLs.
+
+
+É muito comum que APIs retornem seus dados no formato .json, portanto precisamos tratar esses dados quando os recebermos.
+
+json: javascript object notation.
+
+
+FETCH
+consumo de APIs
+
+fetch(url, options)
+	.then(response => response.json())
+	.then(json => console.log(json))
+//retorna uma promise.
+
+
+operações no banco (POST, GET, PUT, DELETE, etc)
+
+fetch retorna uma promise.
+
+
+
+====================================================
+====================================================
+
+
+	ORIENTAÇÃO A OBJETOS
+
+====================================================
+====================================================
+
+
+PARADIGMAS E PILARES
+
+===================================================
+
+
+O que é orientação a objetos?
+
+A programação tem dois paradigmas, imperativo e declarativo.
+
+Imperativo foca em como você vai resolver os programas.
+Declarativo é o que e como.
+
+Os programas são "objetos" que possuem uma série de propriedades.
+
+Pilares:
+
+- Herança
+- Polimorfismo
+- Encapsulamento
+- Abstração
+
+Abstração: Processo mental que consiste em isolar um aspecto determinado de um estado de coisas relativamente complexo, a fim de simplificar a sua avaliação, classificação ou para permitir a comunicação do mesmo."
+
+Herança: O objeto filho herda propriedades e métodos do objeto pai.
+
+Encapsulamento: Cada classe tem propriedades e métodos independentes do restante do código.
+
+Polimorfismo: Objetos podem herdar a mesma classe pai, mas se comportarem de forma diferente quando invocamos seus métodos.
+
+O conceito de que classes mais complexas herdem métodos de classes mais abstratas e os executem à sua maneira.
+
+====================================================
+====================================================
+
+PROTÓTIPOS E CLASSES
+
+====================================================
+
+JavaScript Orientado a objetos.
+
+Os protótpos no js são basicamente os esqueletos de todos os objetos.
+
+Todos os objetos Javascript herdam propriedades e métodos de um pototype. O objeto Object.prototype está no topo desta cadeia.
+
+_prot_
+
+A cadeia vai procurar sempre até chegar no null.
+São responsáveis pelo conceito de herança.
+
+
+CLASSES
+
+Syntatic sugar: uma sintaxe feita para facilitar a escrita.
+
+js não tem classes, mas a partir do ecmascript 6 pode-se utilizar a sintaxe class.
+Sendo que é um objeto e não uma classe.
+
+Js não possui classes nativamente. Todas as classes são objetos e a herança se dá por protótipos.
+
+
+Método super passa os argumentos enviados para a classe ascendente.
+
+
+Getters e Setters são nomeados com _, ex: _saldo
+
+
+Funções dentro de um objeto são chamadas de métodos.
+
+
+Abstração:
+
+Diminuir complexidade.
+
+
+
+
+====================================================
+====================================================
+
+Trabalhando com módulos em JavaScript
+
+====================================================
+
+Utilizando módulos
+
+
+O que são módulos: arquivos javascript que tem a capacidade de exportar e inportar informações de outros arquivos do mesmo tipo.
+
+Algumas vantagens são:
+Organização do código;
+Compartilhamento de variáveis em escopos diferentes;
+explicita as dependências dos arquivos.
+
+
+Como exportar? Tem duas formas
+Named exports
+
+pode colocar o export antes da function ex: export function
+
+ou  colocar ex:
+export {
+xxxxxxx,
+xxxxx,
+xxxxxxx,
+}
+
+Default exports
+
+só pode haver um por arquivo.
+será o retorno padrão do seu arquivo.
+
+ex: export default mostraHobby;
+
+
+IMPORTAR
+
+Para importar utilzia-se os named exports:
+
+named exports:
+import {funcao, variavel, classe} from './arquivo.js'
+
+default exports
+import valorDefault from '.arquivo.js'
+
+
+Trocando nome de imports, apelidando functions utilizando 'as'.
+
+import {arquivo as Apelido} from './arquivo.js';
+
+Apelido.metodo();
+
+
+Outra forma de fazer o imports é utilizando o *, que importa tudo de um arquivo.
+
+import* as INFOS from './arquivo.js;
+INFOS.metodoA();
+console.log(INFOS.variavel);
+
+
+Vinculando tudo ao HTML
+
+<script type="module" src="./main.js"></script>
+
+Para fazer testes localmente será necessário estar rodando um servidor. Isso pode ser feito utilizando a extensão "live server", do vscode.
+
+
+
+CURIOSIDADES
+
+Módulos sempre estão em "strict mode";
+Podem ser utilizadas as extensões .js e .mjs.
+Para testes locais, é necessário utilizar um servidor.
+Ao importar, sempre lembre da extensão(.js, .mjs).
+Ao importar, sempre utilize '/" como ponto de partida.
+
+
+
+
+
+====================================================
+====================================================
+
+	MANIPULANDO A D.O.M com JavaScript
+
+====================================================
+
+
+O QUE É D.O.M E D.O.M vs B.O.M
+
+====================================================
+
+DOM
+
+Document Object Model
+
+É um padrão de como acessar e modificar os elementos HTML de uma página.
+
+BOM: Browser Object Model
+
+Tudo o que está dentro do objeto window: document, history, location, secreen, navigator...
+
+
+====================================================
+====================================================
+
+	MÉTODOS
+
+====================================================
+
+
+sELECIONANDO ELEMENTOS DE UMA PÁGINA.
+
+document.getElementById('titulo');
+
+document.getElementsByTagName('li');
+
+document.getElementsByClassName('textos');
+
+ducument.querySelectorAll('.primeira-classe .segunda-classe');
+
+ducument.querySelectorAll('li .opcao'); //busca mais seguimentada.
+
+
+
+Adicionar e deletar
+
+document.createElement(element)  // cria um novo elemento html
+document.removeChild(element)  // remove um elemento
+document.appendChild(element) // adiciona um elemento
+document.replaceChild(new, old) //substitui um elemento
+
+
+====================================================
+====================================================
+
+TRABALHANDO COM ESTILOS
+
+====================================================
+
+Element.classList
+Representa a lista de classes.
+
+meuElemento.classList.add("novo-estilo"); //adiciona uma classe.
+
+meuElemento.classList.remove("classe") // remove uma classe.
+
+meuElemento.classList.toggle("dark-mode" // Adiciona a classe "dark-mode" caso ela não faça parte da lista e remove ela caso faça.
+
+
+CSS
+
+Acessando diretamente o CSS de um elemento
+
+
+document.getElementsByTagName('p').style.color = "blue";
+
+
+
+====================================================
+====================================================
+
+TIPOS E ADICIONANDO EVENTOS
+
+====================================================
+
+
+Eventos do mouse:
+
+mouseouver, mouseout
+
+Eventos de clique:
+click, dblick
+
+Eventos de atualização:
+Chang, load
+
+
+EVENT LISTENER
+
+Diretamente no javascript, cria um evento que vai ser acionado no momento em que o usuário realizar determinada ação.
+
+"escutador de eventos"
+
+const botão = document.getElementById("meuBotão");
+
+botao.addEventListener("click". outraFuncao);
+
+
+Atributo HTML
+
+Especifica a função a ser chamada diretamente no elemento HTML.
+
+<h1 onclick=mudaTexto(this)"Clique aqui"</h1>
+
+
+
+
+
+
+
+
+====================================================
+====================================================
+
+	TYPESCRIPT
+
+====================================================
+====================================================
+
+EXEMPLO DAS VANTAGENS DO TYPESCRIPT
+
+
+Typescript é como se fosse uma extensão do js, evita escrever muito código.
+
+
+
+
+====================================================
+====================================================
+
+CRIANDO O ARQUIVO INDEX.TS E EXECUTANDO O COMANDO PARCEL
+
+====================================================
+
+abre o prompet de comando
+
+entra/cria a pasta onde vai trabalhar
+executa o comando init npm
+da enter em tudo.
+
+abre o código com code _
+
+Instala um budler: npm i parcel-bundler
+da enter e espera
+
+cria uma index.html dentro da pasta
+
+cria um index.ts
+
+da um star no package.json dentro do script: "start": "parcel index.html",
+
+chama no html o type script dentro do body:     <script src="./index.ts"></script>
+
+da um console log dentro do index.ts: console.log('TypeScript');
+
+abre o terminal e executa com: npm run start
+
+instala o gitignore no cmd com o comando: npm install gitignore -g
+
+da um git ignore: gitignore node
+
+// https://medium.com/@cristianomorgante/boas-pr%C3%A1ticas-ao-iniciar-um-projeto-de-desenvolvimento-30f42f8bd98f
+
+
+digita cache e dist nas linhas 1 e 2 do gitignore
+
+
+
+
+====================================================
+====================================================
+
+	ESCREVENDO A FUNÇÃO SOMA COM TYPESCRIPT
+
+====================================================
+
+Digita: tsc index.ts
+no terminal
+
+A parte de cima foi apenas um exemplo, apagar e utilizar a parte de baixo.
+
+
+
+====================================================
+====================================================
+
+	CONSTRUINDO UM SISTEMA DE ESTÁCIONAMENTO NO TYPESCRIPT
+
+====================================================
+====================================================
+
+npm i typescript
+
+
+
+
+
+
+
+
+==
+
+
+Microsoft Windows [versão 10.0.22000.739]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\mathe>cd..
+
+C:\Users>cd..
+
+C:\>cd "dio projetos"
+O sistema não pode encontrar o caminho especificado.
+
+C:\>cd "Dioprojetos"
+
+C:\Dioprojetos> cd "projeto 3"
+
+C:\Dioprojetos\projeto 3>ls
+'ls' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Dioprojetos\projeto 3>cd "projeto"
+
+C:\Dioprojetos\projeto 3\Projeto>npm i typescript
+
+added 1 package, and audited 2 packages in 5s
+
+found 0 vulnerabilities
+
+C:\Dioprojetos\projeto 3\Projeto>ls
+'ls' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Dioprojetos\projeto 3\Projeto>npm typescript init
+Unknown command: "typescript"
+
+To see a list of supported npm commands, run:
+  npm help
+
+C:\Dioprojetos\projeto 3\Projeto>npm typescript tsc --init
+Unknown command: "typescript"
+
+To see a list of supported npm commands, run:
+  npm help
+
+C:\Dioprojetos\projeto 3\Projeto>npm typescript --init
+Unknown command: "typescript"
+
+To see a list of supported npm commands, run:
+  npm help
+
+C:\Dioprojetos\projeto 3\Projeto>npm typescript --init
+Unknown command: "typescript"
+
+To see a list of supported npm commands, run:
+  npm help
+
+C:\Dioprojetos\projeto 3\Projeto>npx -p typescript tsc --init
+
+Created a new tsconfig.json with:
+                                                                                                                     TS
+  target: es2016
+  module: commonjs
+  strict: true
+  esModuleInterop: true
+  skipLibCheck: true
+  forceConsistentCasingInFileNames: true
+
+
+You can learn more at https://aka.ms/tsconfig
+
+C:\Dioprojetos\projeto 3\Projeto>npx -p typescript tsc --init
+error TS5054: A 'tsconfig.json' file is already defined at: 'C:/Dioprojetos/projeto 3/Projeto/tsconfig.json'.
+
+C:\Dioprojetos\projeto 3\Projeto>
+
+
+
+
+
+==
+
+
+
+npx -p typescript tsc
+
+
+para transpilar o código!!
+
+
+
